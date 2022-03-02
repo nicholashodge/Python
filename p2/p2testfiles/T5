@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# reads a char and incrs 3 times in a loop using [ and ]
+
+cat <<EOF  >PGMFILE
+,>+++[<+>-]<.
+EOF
+
+cat <<EOF  >INFILE
+D
+EOF
+
+python3 $1 PGMFILE INFILE
+
+rm -f PGMFILE
+rm -f INFILE

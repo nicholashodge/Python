@@ -1,0 +1,20 @@
+#!/bin/bash
+
+echo
+echo RMB " ~11 secs "
+echo RMB 0.001152797993
+echo RMB 1.648172008835
+echo
+
+/usr/bin/time -p python3 p4.py 11 7000 1
+
+
+echo
+echo RMB " ~6 secs "
+echo RMB 0.001152797993
+echo RMB 1.648172008835
+echo
+
+/usr/bin/time -p python3 p4.py 11 7000 2
+
+echo

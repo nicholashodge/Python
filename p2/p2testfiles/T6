@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# 2 examples of mis-matched brackets
+# would print "Hello Wor"  if brackets were correct
+
+echo
+echo "RMB missing [ replaced with X"
+echo
+cat <<EOF  >PGMFILE
+++++++++[>++++X>++>+++>+++>+<<<<-]>+>->+>>+[<]<-]>>.>>---.+++++++..+++.>.<<-.>.+++.
+EOF
+
+python3 $1 PGMFILE /dev/null
+
+rm -f PGMFILE
+
+
+echo
+echo "RMB missing ] replaced with X"
+echo
+cat <<EOF  >PGMFILE
+++++++++[>++++[>++>+++>+++>+<<<<-]>+>->+>>+[<X<-]>>.>>---.+++++++..+++.>.<<-.>.+++.
+EOF
+
+python3 $1 PGMFILE /dev/null
+
+rm -f PGMFILE

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+cat <<EOF  >PGMFILE
+",+++."
+EOF
+
+cat <<EOF  >INFILE
+D
+EOF
+
+
+python3 $1 PGMFILE INFILE
+
+rm -f PGMFILE
+rm -f INFILE
