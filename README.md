@@ -7,7 +7,7 @@ Compare if the command line integer is equal to its position to the power of its
 Manipulate a memory page from input file of commands.
 
 ### P3
-Send and receive tuples using the .send() function.
+Send and receive tuples between python files using the .send() function.
 
 ### P4
 Multiprocessing the distances between a queue of randomly generated 3D coordinates.
